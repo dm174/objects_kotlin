@@ -25,6 +25,7 @@ class MainKtTest {
         val result = WallService.update(updatedPost)
         assertFalse(result)
     }
+
     @Test
     fun testUpdateExistingPost1() {
         val post = Post(2)
@@ -48,6 +49,7 @@ class MainKtTest {
         val retrievedPost = WallService.getById(post.id)
         assertNull(retrievedPost)
     }
+
     @Test
     fun testGetNonExistingPostById() {
         val retrievedPost = WallService.getById(999)
@@ -61,6 +63,7 @@ class MainKtTest {
         val retrievedPost = WallService.getById(updatedPost.id)
         assertNull(retrievedPost)
     }
+
     @Test
     fun testGetNonExistingPostByIdReturnsNull() {
         val retrievedPost = WallService.getById(999)
@@ -73,4 +76,11 @@ class MainKtTest {
         val main1 = main()
 
     }
+
+
+
+
+
+
 }
+
