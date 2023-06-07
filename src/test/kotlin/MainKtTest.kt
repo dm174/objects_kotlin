@@ -25,6 +25,14 @@ class MainKtTest {
         val result = WallService.update(updatedPost)
         assertFalse(result)
     }
+    @Test
+    fun testUpdateExistingPost1() {
+        val post = Post(2)
+        WallService.add(post)
+        val updatedPost = Post(post.id, Likes(12))
+        val result = WallService.update(updatedPost)
+        assertFalse(result)
+    }
 
     @Test
     fun testUpdateNonExistingPost() {
@@ -32,6 +40,7 @@ class MainKtTest {
         val result = WallService.update(updatedPost)
         assertFalse(result)
     }
+
     @Test
     fun testGetPostById() {
         val post = Post(0)
@@ -58,5 +67,10 @@ class MainKtTest {
         assertNull(retrievedPost)
     }
 
+    @Test
+    fun main1() {
 
+        val main1 = main()
+
+    }
 }

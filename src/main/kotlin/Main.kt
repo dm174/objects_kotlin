@@ -46,8 +46,8 @@ fun main(){
     WallService.add(Post(1))
     WallService.add(Post(2))
     WallService.print()
-   //post.id=2
-   // WallService.print()
+   post.id=2
+    WallService.print()
     WallService.update(Post(2,Likes (12)))
     WallService.print()
 }
