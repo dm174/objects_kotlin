@@ -12,7 +12,7 @@ object WallService {
                 posts += post.copy(id =++lastId, likes = post.likes.copy())
                 return posts.last()
 
-            }
+           TODO() }
     fun update(newPost:Post):Boolean {
 
         for ((index,post)in posts.withIndex()) {
@@ -22,7 +22,15 @@ object WallService {
             }
         }
         return false
+        TODO()
+    }
+    fun getById(id: Int): Post? {
+        return posts.find { it.id == id }
 
+    }
+    fun clear() {
+        posts = emptyArray()
+        lastId = 0// также здесь нужно сбросить счетчик для id постов, если он у вас используется
     }
             fun print() {
                 for (post in posts) {

@@ -19,6 +19,11 @@ dependencies {
 }
 
 
+jacocoTestReport {
+    reports {
+        html.enabled true
+    }
+}
 
 kotlin {
     jvmToolchain(8)
