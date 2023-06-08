@@ -11,9 +11,9 @@ data class Post(
     var floatData: Float = 0.0f,
     var doubleData: Double = 0.0,
     var charData: Char = ' ',
-    var unitData: Unit = Unit
 
-    )
+
+)
 
 data class Likes(
     var count: Int

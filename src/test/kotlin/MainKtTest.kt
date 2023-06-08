@@ -6,7 +6,6 @@ import org.junit.Test
 class MainKtTest {
 
 
-
     @Before
     fun clearBeforeTest() {
         WallService.clear()
@@ -21,7 +20,7 @@ class MainKtTest {
     }
 
     @Test
-    fun testUpdateExistingPost() {
+    fun testUpdateExistingPost7() {
         val post = Post(0)
         WallService.add(post)
         val updatedPost = Post(post.id, Likes(12))
@@ -76,11 +75,9 @@ class MainKtTest {
     @Test
     fun main1() {
 
-      main()
+        main()
 
     }
-
-
 
 
     @Test
@@ -102,8 +99,12 @@ class MainKtTest {
         assertNull(retrievedPost)
     }
 
-
+    @Test
+    fun testUpdateExistingPost() {
+        val post = Post(0)
+        WallService.add(post)
+        val updatedPost = Post(1, Likes(12))
+        val result = WallService.update(updatedPost)
+        assertTrue(result)
+    }
 }
-
-
-
