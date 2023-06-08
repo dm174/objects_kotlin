@@ -2,13 +2,16 @@ import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 
+
 class MainKtTest {
+
 
 
     @Before
     fun clearBeforeTest() {
         WallService.clear()
     }
+
 
     @Test
     fun testAddPost() {
@@ -73,14 +76,34 @@ class MainKtTest {
     @Test
     fun main1() {
 
-        val main1 = main()
+      main()
 
     }
 
 
 
 
+    @Test
+    fun testUpdateNonExistingPost6() {
+        val updatedPost = Post(2, Likes(12)) // Создаем новый пост с обновленными данными
+        val result = WallService.update(updatedPost) // Обновляем пост в WallService
+        assertFalse(result) // Проверяем, что обновление не удалось, так как пост с таким ID не существует
+        val retrievedPost = WallService.getById(updatedPost.id) // Получаем пост из WallService по заданному ID
+        assertNull(retrievedPost) // Проверяем, что полученный пост является null
+    }
+
+
+    @Test
+    fun testClearPosts() {
+        val post = Post(1)
+        WallService.add(post)
+        WallService.clear()
+        val retrievedPost = WallService.getById(post.id)
+        assertNull(retrievedPost)
+    }
 
 
 }
+
+
 

@@ -178,7 +178,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MainKtTest.testUpdateNonExistingPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainKtTest.testUpdatePost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MainKtTest.testUpdateNonExistingPost&quot;" />
+            <option value="&quot;MainKtTest.testUpdatePost&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,10 +230,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MainKtTest" />
+        <item itemvalue="Gradle.MainKtTest.testUpdatePost" />
         <item itemvalue="Gradle.MainKtTest.testUpdateExistingPost2" />
         <item itemvalue="Gradle.MainKtTest.testUpdateExistingPostUpdated" />
         <item itemvalue="Gradle.MainKtTest.testUpdateExistingPost" />
-        <item itemvalue="Gradle.MainKtTest.testUpdateNonExistingPost" />
       </list>
     </recent_temporary>
   </component>
@@ -267,14 +267,22 @@
       <option name="project" value="LOCAL" />
       <updated>1686133656424</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Лучший">
+      <created>1686137931666</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686137931666</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+build.grade" />
     <MESSAGE value="+test" />
     <MESSAGE value="+test 100" />
-    <option name="LAST_COMMIT_MESSAGE" value="+test 100" />
+    <MESSAGE value="Лучший" />
+    <option name="LAST_COMMIT_MESSAGE" value="Лучший" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_5$MainKtTest_testUpdateNonExistingPost.ic" NAME="MainKtTest.testUpdateNonExistingPost Coverage Results" MODIFIED="1686123644401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
